@@ -1,5 +1,5 @@
 <style>
-  <?php include "name.css" ?>
+<?php include "name.css" ?>
 </style>
 
 <!DOCTYPE html>
@@ -9,10 +9,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="name.css">
 </head>
 <body>
-
+<div id="socialMedia" >
+        <ul id="links">
+            <li id="yelp"><a href="https://www.yelp.com/biz/hmc-air-systems-murrieta"><img id="yelpLogo" src="images/168-1683390_yelp-logo-transparent-yelp-icon-removebg-preview.png" alt="Yelp"></a></li>
+        </ul>
+    </div>
+    
+    
     <nav id="main_menu"> 
         <div class="logo_img">
             <a href="web.html"><img id="logo" src="images/10360648421.png" alt="HMC Air Systems Logo"></a>
@@ -20,10 +25,10 @@
 
         <div class="inner_main_menu" id="inner_main_menu1">
             <ul id="list">
-                <li><a id="homeList" href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="contactUS.php">Contact us</a></li>
+                <li><a id="homeA">Home</a></li>
+                <li><a id="servicesA" >Services</a></li>
+                <li><a id="aboutUsA">About us</a></li>
+                <li><a id = "contactUsA" href="contactUS.php">Contact us</a></li>
             </ul>
         </div>
     </nav>
@@ -84,9 +89,9 @@
                 </div>
         </form>
     </div>
-    
-    
-    <script src="contactUs.js" ></script>
+    <script>
+        <?php include "contactUs.js"; ?>
+    </script>
     <script type="text/javascript">
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
