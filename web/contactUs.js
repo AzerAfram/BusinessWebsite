@@ -9,7 +9,7 @@ function scrollFunction() {
         document.getElementById("logo").style.height = "150px";
         document.getElementById("logo").style.padding = "50px";
         document.getElementById("logo").style.marginTop = "-50px";
-        document.getElementById("inner_main_menu1").style.marginTop = "-95px";
+        document.getElementById("inner_main_menu1").style.marginTop = "-87px";
         document.getElementById("logo").style.marginLeft = "818px";
     }
     else {
@@ -17,8 +17,8 @@ function scrollFunction() {
         document.getElementById("logo").style.marginTop = "0";
         document.getElementById("logo").style.padding= "0";
         document.getElementById("logo").style.height = "300px";
-        document.getElementById("inner_main_menu1").style.marginTop = "-135px";
-        document.getElementById("logo").style.marginLeft = "783px"
+        document.getElementById("inner_main_menu1").style.marginTop = "-133px";
+        document.getElementById("logo").style.marginLeft = "792px"
 
     }
 }
