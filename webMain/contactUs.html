@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="shortcut icon" href="images/logo2.ico">
+</head>
+<body id="theBody">
+
+    <div id="homeDiv">
+        <nav id="main_menu"> 
+            <div class="logo_img">
+               <img id="logo" src="images/logo2.png" alt="HMC Air Systems Logo">
+            </div>
+
+            <div id="leftWrapper">
+                    
+            </div>
+
+            <div class="inner_main_menu" id="innerMainMenu">
+                <ul id="list">
+                    <li><a id="homeA" href="homePage.html" target="_self">Home</a></li>
+
+                    <li><a id="contactUsA" href="contactUs.html" target="_self">Contact Us</a></li>
+
+                    <li><a id="aboutUsA" href="aboutUs.html" target="_self">About us</a></li>
+
+                    <li>
+                        <div id="testDiv">
+                        <div id="servicesDiv">
+                            <a id = "servicesA" href="services.html" target="_self">Services</a>
+                            <br>
+                            <a id="servicesCooling" href="services.html" target="_self">Cooling</a>
+                        </div>
+                        </div>
+                    </li>
+
+                    <li>                         
+                        <img id="navBarMenuImg" src="images/navBarMenu.webp" alt="Menu">
+                    </li>
+                </ul>
+                <div id="mainLinksMobile">
+
+                </div>
+            </div>
+        </nav>
+            
+            <div id="socialMedia" >
+                <ul id="links">
+                    <li id="yelp">
+                        <a href="https://www.yelp.com/biz/hmc-air-systems-murrieta"><img id="yelpLogo" src="images/yelpLogo.png" alt="Yelp"></a>
+                    </li>
+                    
+                    <li id="navBarMenuLi">
+                    </li>
+                </ul>
+            </div>
+        <div id="contactUsDiv">
+            <h1>Contact Us</h1>
+            <h4 id="h4ContactUs">We will get back to you as soon as possible</h4>
+        </div>
+            <div id="outerInputDiv">
+                <form id="formDiv">
+                        
+                            <input id="first_name" name="first_name" type="text" class="validate">
+                                <label id="firstName" class="labels" for="first_name">Name</label>
+
+
+                  
+                            <input id="phone" name="phone" type="text" class="validate">
+                                <label id="phoneLabel" class="labels" for="phone">Email/Phone</label>
+            
+                    
+                            <input id="zipCode" name="zipCode" type="text" class="validate">
+                            <div id="zipCodeLabelDiv">         
+                                <label id="zipCodeLabel" class="labels" for="zipCode">Address(optional)</label>
+
+                            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                            <label id="messageLabel" class="labels" for="message">Message</label>       
+
+                        <div id="submitDiv">
+                            <button id="submitButton" name="submitButton" type="submit">Submit</button>
+                        </div>
+
+                        <p id="footer">Copyright &copy 2022 HMC Air Systems <br> Website made by Azer Afram</p>
+                </form>
+            </div>
+        </div>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        emailjs.init('QMgShvnjiMfOpoSIK')
+    </script>
+
+    <script src="contactUs.js"></script>
+
+    <script type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+
+</html>

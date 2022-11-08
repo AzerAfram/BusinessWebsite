@@ -1,0 +1,699 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-left: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  background-image: url("images/homeBack.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 100%;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#main_menu { 
+  left: 0;
+  right: 0;
+  background-color: #f4b300;
+  margin-top: -20px;
+  position: fixed;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 99;
+}
+
+
+#innerMainMenu {
+  transition-duration: 200ms;
+  margin-top: -155px;
+}
+
+#list li {
+  display: inline-block;
+  transition: 800ms;
+}
+
+
+
+
+#homeA {
+  position: absolute;
+  left: 20vw;
+  transition: 100ms;
+  z-index: 9;
+}
+
+#contactUsA {
+  position: absolute;
+  right: 61.1%;
+  z-index: 9;
+}
+
+#servicesDiv {
+  position: absolute;
+  left: 61%;
+  cursor: pointer;
+  z-index: 9;
+}
+
+#aboutUsA {
+  position: absolute;
+  right: 20vw;
+  transition: 100ms;
+  cursor: pointer;
+  z-index: 9;
+}
+
+
+
+.inner_main_menu ul li a {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.inner_main_menu ul li a:hover {
+  color: green;
+  opacity: none;
+}
+
+.logo_img {
+  text-align: center;
+  transition-duration: 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#logo {
+  width: 15vw;
+
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+
+#links {
+  list-style: none;
+}
+
+#yelpLogo {
+  width: 3vw;
+  filter: brightness(150%);
+}
+
+#yelp {
+  position: fixed;
+  top: 2vw;
+  left: 15vw;
+  z-index: 99;
+}
+
+
+#servicesCooling {
+  font-size: 14px; /*3vw*/
+
+  text-align: center;
+  display: none;
+}
+  
+#topTitle {
+  font-size: 6vw;
+  font-family:serif;
+  color: rgb(213, 213, 255);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  top: 15vw;
+  z-index: -1;
+}
+
+
+  #servicePopupDiv {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    top: 30vw;
+  }
+  
+  #servicePopup {
+    width: 26vw;
+    height: 5.5vw;
+    color: black;
+    font-size: 2.5vw;
+    border-radius: .8vw;
+    background-color: white;
+    cursor: pointer;
+    border-color: white;
+    transition: 100ms;
+    padding: 0;
+    border: none;
+    font-weight: bold;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #servicePopup:hover {
+    box-shadow: 3px 3px 3px grey;
+    background-color: #2f74e2;
+    border-color: #2f74e2;
+    color: white;
+    
+  }
+  #serviceModal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    display: none; /*flex*/
+    top: 0;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+/* modal must be viewed from top*/
+
+  label {
+    transition: 100ms;
+    cursor: text;
+    margin-left: 24px;
+  }
+
+
+
+  #serviceModalContent {
+    width: 560px;
+    height: 520px;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 135px;
+  }
+
+
+
+  #phoneLabelS {
+    font-size: 15px;
+    line-height: 13px;
+    color: grey;
+    font-weight: normal;
+    margin-top: -42px;
+    position: absolute;
+  }
+
+
+  #modalTitleF {  
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 181px;
+    color: #de5246;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  #nameLabelS {
+    font-size: 15px;
+    line-height: 13px;
+    margin-top: -115px;
+    color: grey;
+    font-weight: normal;
+    position: absolute;
+  }
+
+ 
+  #issue {
+    position: absolute;
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 55px;
+    width: 524px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 164px;
+    padding-top: 10px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #issueLabel {
+    font-size: 15px;
+    line-height: 13px;
+    margin-top: 177px;
+    padding-bottom: 0px;
+    color: grey;
+    font-weight: normal;
+    position: absolute;
+  }
+
+  #date {
+    position: absolute;
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 35px;
+    width: 524px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 18px;
+  }
+
+  #dateLabel {
+    font-size: 15px;
+    line-height: 13px;
+    margin-top: 31px;
+    color: grey;
+    font-weight: normal;
+    position: absolute;
+  }
+
+  #time {
+    position: absolute;
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 35px;
+    width: 524px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 91px;
+  }
+
+  #timeLabel {
+    font-size: 15px;
+    line-height: 13px;
+    margin-top: 105px;
+    color: grey;
+    font-weight: normal;
+    position: absolute;
+    }
+
+  input, textarea {
+    padding-left: 13px;
+    border: 2px solid black;
+    color: black;
+    font-size: 15px;
+
+  }
+  
+  #phoneS {
+    position: absolute;
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 35px;
+    width: 524px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -55px;
+    }
+
+  #nameS {
+    position: absolute;
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 35px;
+    width: 524px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-width: 1px;
+    margin-top: -128px;
+  }
+
+  #submitServiceDiv {
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #submitService {
+    position: absolute;
+    width: 180px;
+    height: 47px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #4285F4;
+    cursor: pointer;
+    border-color: #4285F4;
+    transition: 100ms;
+    border: none;
+    font-weight: bold;
+    margin-top: 580px;
+  }
+
+  #submitService:hover {
+    box-shadow: 3px 3px 3px grey;
+    background-color: #1aa260;
+  }
+
+  #closeImgSrc {
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+  }
+
+
+  #closeImg {
+    margin-left: 531px;
+    margin-top: 8px;
+  }
+
+  #mainLinksMobile {
+    position: absolute;
+    background-color: #4c8bf5;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    right: -2px;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    z-index: 0;
+    display: none;
+  }
+
+  #navBarMenuImg {
+    position: absolute;
+    display: none;
+  }
+
+  #leftWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    padding-left:5px;
+    height: 100%;
+    display: none;
+  }
+
+
+  #selfMaintenanceTitle{
+    position: absolute;
+    margin-top: 70vw;
+    font-size: 3vw;
+    line-height: 4vw;
+    text-align: center;
+    left: 1.7vw;
+    right: 1.7vw;
+    z-index: -1;
+  }
+
+  #selfMaintenances {
+    position: absolute;
+    margin-top: 87vw;
+    font-size: 1.6vw;
+    line-height: 4vw;
+    padding: 0;
+    right: 6vw;
+    left: 1.7vw;
+    z-index: -1;
+  }
+
+  .selfMaintenanceH2 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 10vw;
+  }
+
+  .bolded {
+    font-weight: bold;
+    color: rgb(190, 0, 0);
+  }
+
+  #selfMaintenanceBottom {
+    position: absolute;
+    top: 144vw;
+    text-align: center;
+    width: 100%;
+    font-size: 2vw;
+    z-index: -1;
+  }
+
+
+  #serviceMap {
+    position: absolute;
+    margin-top: 155vw;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40vw;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    z-index: -1;
+  }
+
+  #conclusionText {
+    position: absolute;
+    font-size: 2vw;
+    top: 185vw;
+    text-align: center;
+    line-height: 3vw;
+  }
+
+  #galleryContainer {
+    margin-left: 25vw;
+  }
+
+  #galInstallTop {
+    position: absolute;
+    top: 200vw;
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+    font-family: cursive;
+    letter-spacing: .2vw;
+  }
+
+  #galleryBackground {
+    position: absolute;
+    margin-top: 195vw;
+    background-color: #808080;
+    width: 100%;
+    height: 2px;
+
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+
+ #galleryUL {
+    position: absolute;
+    margin-top: 210vw;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    text-align: center;
+ }
+
+ #footer {
+  font-size: 1vw;
+  line-height: 1.5vw;
+  text-align: center;
+  color: white;
+ }
+
+ .installImg {
+  width: 50vw;
+  border-radius: 5px;
+ }
+
+ #repairGalTop {
+    margin-top: 7vw;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 4vw;
+    font-family: cursive;
+    letter-spacing: .2vw;
+ }
+
+ hr {
+  margin-top: 10vw;
+  width: 1000vw;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  height: .04vw;
+  border-radius: 1vw;
+}
+
+
+
+
+
+  /* Service-sechedule-modal resizing*/
+
+  @media (max-width: 550px) {
+    #modalTitleF {
+      font-size: 3.5vw;
+      margin-top: 20px;
+      margin-left: 30.9%;
+    }
+
+    #nameS {
+      width: 95vw;
+      margin-left: 2px;
+    }
+
+    #phoneS {
+      width: 95vw;
+      margin-left: 2px;
+    }
+
+    #date {
+      width: 95vw;
+      margin-left: 2px;
+    }
+
+    #time {
+      width: 95vw;
+      margin-left: 2px;
+
+    }
+
+    label {
+      margin-left: 3vw;
+    }
+
+    #issue {
+      width: 95vw;
+      margin-left: 2px;
+    }
+
+    #closeImgSrc {
+      right: 2.5vw;
+    }
+
+
+    #serviceModalContent {
+      width: 100vw;
+    }
+  }
+
+  /* Main navigation bar links positioning*/ 
+
+
+
+  @media (min-width: 1200px) {
+    #logo {
+      width: 12vw;
+    }
+
+    #topTitle {
+      font-size: 5vw;
+      top: 13vw;
+    }
+
+    #servicePopupDiv {
+      top: 25vw;
+    }
+
+    #selfMaintenanceTitle {
+      font-size: 2vw;
+      line-height: 3vw;
+   
+    }
+
+    #selfMaintenances {
+      font-size: 1vw;
+      line-height: 3vw;
+      margin-top: 84vw;
+    }
+
+    .selfMaintenanceH2 {
+      margin-bottom: 6vw;
+    }
+
+
+    #serviceMap {
+      margin-top: 125vw;
+    }
+
+    #selfMaintenanceBottom {
+      top: 118vw;
+    }
+
+    #conclusionText {
+      top: 150vw;
+    }
+
+    #galInstallTop {
+      top: 165vw;
+    }
+
+    #galleryBackground {
+      margin-top: 163vw;
+    }
+
+    #galleryUL {
+      margin-top: 175vw;
+    }
+  }
+
+
+/* Side navigation bar for mobile*/
+
+
+
+@media (max-width: 900px) {
+
+  #navBarMenuImg {
+    width: 13%;
+    top: 0;
+    right: -.8vw;
+    display: block;
+    cursor: pointer;
+  }
+
+
+  #homeA {
+    display: none;
+  }
+
+  #contactUsA {
+    display: none;
+  }
+
+  #servicesDiv {
+    display: none;
+  }
+
+  #aboutUsA {
+    display: none;
+  }
+
+}

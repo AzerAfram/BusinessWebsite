@@ -1,0 +1,331 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-left: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#main_menu { 
+  left: 0;
+  right: 0;
+  background-color: #f4b300;
+  margin-top: -15px;
+  position: fixed;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 99;
+}
+
+
+#innerMainMenu {
+  transition-duration: 200ms;
+  margin-top: -155px;
+}
+
+#list li {
+  display: inline-block;
+  transition: 800ms;
+}
+
+
+
+
+#homeA {
+  position: absolute;
+  left: 20vw;
+  transition: 100ms;
+  z-index: 9;
+}
+
+#contactUsA {
+  position: absolute;
+  right: 61.1%;
+  z-index: 9;
+}
+
+#servicesDiv {
+  position: absolute;
+  left: 61%;
+  cursor: pointer;
+  z-index: 9;
+}
+
+#aboutUsA {
+  position: absolute;
+  right: 20vw;
+  transition: 100ms;
+  cursor: pointer;
+  z-index: 9;
+}
+
+
+
+.inner_main_menu ul li a {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.inner_main_menu ul li a:hover {
+  color: green;
+  opacity: none;
+}
+
+.logo_img {
+
+  text-align: center;
+  transition-duration: 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#logo {
+  width: 17%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+#links {
+  list-style: none;
+}
+
+#yelpLogo {
+  width: 3vw;
+  filter: brightness(150%);
+}
+
+#yelp {
+  position: fixed;
+  top: 2vw;
+  left: 15vw;
+  z-index: 99;
+}
+
+
+#servicesCooling {
+  font-size: 14px; /*3vw*/
+
+  text-align: center;
+  display: none;
+}
+
+  #aboutUsTop {
+    color: #4285F4;
+    position: absolute;
+    top: 22vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 4vw;
+  }
+
+  #aboutUsSubTop {
+    position: absolute;
+    top: 30vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: center;
+    font-size: 4vw;
+    line-height: 6vw;
+    font-weight: 400;
+  }
+
+  .ifBold {
+    font-weight: bold;
+    color:rgb(190, 0, 0);
+  }
+
+  #familyImage {
+    margin-top: 100vw;
+    width: 40%;
+    border-radius: 1vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+  }
+
+  #aboutUsBottom {
+    position: absolute;
+    margin-top: 160vw;
+    font-weight: normal;
+    font-size: 2vw;
+    text-align: center;
+    width: 100%;
+    line-height: 4vw;
+  }
+
+  #aboutUsContact {
+    text-decoration: none;
+  }
+
+  #aboutUsEmail {
+    text-decoration: none;
+  }
+
+  #mainLinksMobile {
+    position: absolute;
+    background-color: #4c8bf5;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    right: -2px;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    z-index: 0;
+    display: none;
+  }
+
+  #navBarMenuImg {
+    position: absolute;
+    display: none;
+  }
+
+  #leftWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    padding-left:5px;
+    height: 100%;
+    display: none;
+  }
+
+  #imageGalleryBackground {
+    position: absolute;
+    margin-top: 170vw;
+    background-color: #808080;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+
+  #imageGalleryTop {
+    position: absolute;
+    margin-top: 175vw;
+    font-size: 4vw;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  #galleryContainer {
+    margin-left: 25vw;
+  }
+
+  #galleryUL {
+    position: absolute;
+    margin-top: 185vw;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    text-align: center;
+  }
+
+  .usPics {
+    width: 50vw;
+    border-radius: 5px;
+  }
+
+  #footer {
+    color: white;
+    font-size: 1vw;
+    line-height: 1.5vw;
+  }
+
+  @media (min-width: 1200px) {
+    #logo {
+      width: 12vw;
+    }
+
+    #aboutUsBottom {
+      margin-top: 130vw;
+      font-size: 1.5vw;
+    }
+
+    #aboutUsSubTop {
+      font-size: 2.5vw;
+      line-height: 4vw;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      top: 25vw;
+    }
+
+    #aboutUsTop {
+      top: 15vw;
+    }
+
+    #familyImage {
+      margin-top: 70vw;
+    }
+
+    #imageGalleryBackground {
+      margin-top: 150vw;
+    }
+
+    #imageGalleryTop {
+      margin-top: 155vw;
+    }
+
+    #galleryUL {
+      margin-top: 165vw;
+    }
+  }
+
+
+  @media (max-width: 900px) {
+
+    #navBarMenuImg {
+      width: 13%;
+      top: 0;
+      right: -.8vw;
+      display: block;
+      cursor: pointer;
+    }
+  
+  
+    #homeA {
+      display: none;
+    }
+  
+    #contactUsA {
+      display: none;
+    }
+  
+    #servicesDiv {
+      display: none;
+    }
+  
+    #aboutUsA {
+      display: none;
+    }
+  
+  }

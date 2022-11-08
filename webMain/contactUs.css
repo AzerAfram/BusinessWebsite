@@ -1,0 +1,457 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-left: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#main_menu { 
+  left: 0;
+  right: 0;
+  background-color: #f4b300;
+  margin-top: -20px;
+  position: fixed;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 99;
+}
+
+
+#innerMainMenu {
+  transition-duration: 200ms;
+  margin-top: -155px;
+}
+
+#list li {
+  display: inline-block;
+  transition: 800ms;
+}
+
+
+
+
+#homeA {
+  position: absolute;
+  left: 20vw;
+  transition: 100ms;
+  z-index: 9;
+}
+
+#contactUsA {
+  position: absolute;
+  right: 61.1%;
+  z-index: 9;
+}
+
+#servicesDiv {
+  position: absolute;
+  left: 61%;
+  cursor: pointer;
+  z-index: 9;
+}
+
+#aboutUsA {
+  position: absolute;
+  right: 20vw;
+  transition: 100ms;
+  cursor: pointer;
+  z-index: 9;
+}
+
+
+
+.inner_main_menu ul li a {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.inner_main_menu ul li a:hover {
+  color: green;
+  opacity: none;
+}
+
+.logo_img {
+
+  text-align: center;
+  transition-duration: 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#logo {
+  width: 17%;
+  padding-bottom: 102.5px;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+
+#links {
+  list-style: none;
+}
+
+#yelpLogo {
+  width: 3vw;
+  filter: brightness(150%);
+}
+
+#yelp {
+  position: fixed;
+  top: 2vw;
+  left: 15vw;
+  z-index: 99;
+}
+
+
+#servicesCooling {
+  font-size: 14px; /*3vw*/
+
+  text-align: center;
+  display: none;
+}
+  
+  input, textarea {
+    width: 100%;
+    border-radius: 0px;
+    border: 2px solid black;
+    color: black;
+    font-size: 15px;
+    position: fixed;
+  }
+  
+  
+  
+  label {
+    white-space: nowrap;
+    user-select: none;
+    text-overflow: ellipsis;
+    cursor: text;
+    transition: 150ms;
+    cursor: text;
+    line-height: 13px;
+    font-size: 15px;
+    position: relative;
+    white-space: nowrap;
+    color: grey;
+
+  }
+
+  #outerInputDiv {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+ #formDiv {
+  width: 560px;
+  height: 300px;
+  margin-top: 37%;
+}
+  
+
+  #first_name {
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 35px;
+    width: 524px;
+    margin-left: 10px;  
+    border-width: 1px;
+    margin-top: 5px;
+    padding-right: 0px;
+    position: absolute;
+  }
+
+  #firstName {
+    position: absolute;
+    z-index: 9999999;
+    margin-top: 18px;
+    margin-left: 24px;
+    color: grey;
+    padding-bottom: -5px;
+  }
+  
+  #phone {
+    height: 35px;
+    width: 524px;
+    margin-left: 10px;
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 78px;
+    padding-right: 0px;
+    position: absolute;
+  }
+
+  
+  #phoneLabel {
+    position: absolute;
+    z-index: 99999;
+    margin-top: 91px;
+    margin-left: 24px;
+    color: grey;
+  }
+  #zipCode {
+    height: 35px;
+    width: 524px;
+    margin-left: 10px;
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 151px;
+    padding-right: 0px;
+    position: absolute;
+  }
+
+  
+  #zipCodeLabel {
+    position: absolute;
+    z-index: 9999999;
+    margin-top: 164px;
+    margin-left: 24px;
+    color: grey;
+  }
+  
+  #message {
+    outline: none !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 55px;
+    width: 524px;
+    margin-right: 10px;
+    margin-left: 10px;
+    resize: none;
+    margin-top: 224px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 0px;
+    position: absolute;
+  }
+  
+  #messageLabel {
+    position: absolute;
+    z-index: 9999999;
+    margin-top: 239px;
+    margin-left: 24px;
+    color: grey;
+  }
+
+
+  input, textarea {
+    padding-left: 13px;
+    border: 2px solid black;
+    color: black;
+    font-size: 17px;
+  }
+  
+  #submitButton {
+    width: 180px;
+    height: 47px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #4285F4;
+    cursor: pointer;
+    border-color: #4285F4;
+    transition: 100ms;
+    border: none;
+    margin-top: 310px;
+  }
+
+  #submitDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  
+  
+  #contactUsDiv {
+    text-align: center;
+    position: absolute;
+    color: 	#DB4437;
+    margin-top: 17vw;
+    width: 100%;
+    right: 0px;
+    font-size: 2.5vw;
+  }
+  #h4ContactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #submitButton:hover {
+    box-shadow: 3px 3px 3px grey;
+    background-color: #1aa260;
+  }
+
+  #mainLinksMobile {
+    position: absolute;
+    background-color: #4c8bf5;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    right: -2px;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    z-index: 0;
+    display: none;
+  }
+
+  #navBarMenuImg {
+    position: absolute;
+    display: none;
+  }
+
+  #leftWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    padding-left:5px;
+    height: 100%;
+    display: none;
+  }
+
+  #footer {
+    font-size: 2vw;
+    line-height: 3vw;
+    text-align: center;
+
+    bottom: 0;
+  }
+
+
+
+  @media (max-width: 560px) {
+
+    #first_name {
+      width: 95vw;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+
+    #firstName {
+      margin-left: 16px;
+    }
+
+    #phone {
+      width: 95vw;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+
+    #phoneLabel {
+      margin-left: 16px;
+    }
+
+    #zipCode {
+      width: 95vw;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+
+    #zipCodeLabel {
+      margin-left: 16px;
+    }
+
+    #message {
+      width: 95vw;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+
+    #messageLabel {
+      margin-left: 16px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #first_name {
+      width: 94vw;
+    }
+
+    #phone {
+      width: 94vw;
+    }
+
+    #zipCode {
+      width: 94vw;
+    }
+
+    #message {
+      width: 94vw;
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    #navBarMenuImg {
+      width: 13%;
+      top: 0;
+      right: -.8vw;
+      display: block;
+      cursor: pointer;
+    }
+  
+  
+    #homeA {
+      display: none;
+    }
+  
+    #contactUsA {
+      display: none;
+    }
+  
+    #servicesDiv {
+      display: none;
+    }
+  
+    #aboutUsA {
+      display: none;
+    }
+  
+  }
+
+  /* for footer */
+
+  @media (max-width: 700px) {
+    #footer {
+      position: fixed;
+      left: 0; 
+      right: 0; 
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 700px) {
+    #footer {
+      position: auto;
+      font-size: 1vw;
+      line-height: 1.5vw;
+    }
+  }
+  
