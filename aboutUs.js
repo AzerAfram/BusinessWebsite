@@ -194,7 +194,7 @@ mandatoryIntialSize();
 // We also know that 1vw is 1% of the browser height so 15vw is 15% of the browser height.
 // This means that the height of the background image gallery should be 15vw more than the height of the image gallery.
 
-// We want a footer though so, the background should stretch out to that footer by an extra 5vw.
+// We want a footer, so the background should stretch out to that footer by an extra 5vw.
 
 
 let galleryUL = document.getElementById("galleryUL");
