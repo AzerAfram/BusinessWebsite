@@ -184,7 +184,9 @@ let testDiv = document.getElementById("testDiv");
             aboutUsA.style.right = "20vw";
         }
     }
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
     
-    mandatoryIntialSize();
-    
-    
+mandatoryIntialSize();
