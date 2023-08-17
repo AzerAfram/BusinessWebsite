@@ -1,4 +1,3 @@
-
 let logo = document.getElementById("logo");
 window.onscroll = function() {scrollFunction()}
 function scrollFunction () {
@@ -252,3 +251,6 @@ window.addEventListener("resize", function() {
     galleryBackground.style.height = galleryHeight;
 })
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
